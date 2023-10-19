@@ -3,10 +3,9 @@
     "descriptions": "Learn to create App Inventor Extensions",
     "sidebar": [
         [
-            "Getting Started",
+            "Writing first extension",
             [
-                ["Overview", "/"],
-                ["Setup", "/setup"]
+                ["Getting Started", "/"]
             ]
         ]
     ]
