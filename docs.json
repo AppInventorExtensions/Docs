@@ -7,6 +7,11 @@
             [
                 ["Getting Started", "/"],
                 ["Placing components", "/placing_components"]
+            ],
+            "Common annotations",
+            [
+                ["Extension annotations", "/annotations/extension_annotations.mdx"],
+                ["Events, functions and properties", "/annotations/all_annotations.mdx"]
             ]
         ]
     ]
