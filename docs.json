@@ -1,4 +1,13 @@
 {
     "name": "Ai2 Extensions",
-    "descriptions": "Learn to create App Inventor Extensiosn"
+    "descriptions": "Learn to create App Inventor Extensions",
+    "sidebar": [
+        [
+            "Getting Started",
+            [
+                ["Overview", "/"],
+                ["Placing Components", "/placing"]
+            ]
+        ]
+    ]
 }
