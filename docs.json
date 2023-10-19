@@ -12,8 +12,8 @@
         [
             "Common annotations",
             [
-                ["Extension annotations", "/annotations/extension_annotations.mdx"],
-                ["Events, functions and properties", "/annotations/all_annotations.mdx"]
+                ["Extension annotations", "/annotations/extension_annotations"],
+                ["Events, functions and properties", "/annotations/all_annotations"]
             ]
         ]
     ]
