@@ -1,0 +1,36 @@
+# Extension annotations
+
+A few vital annotations help you correctly define, create and tweak the properties of the extension.
+They all must be added before the class declaration.
+
+## DesignerComponent
+
+```java
+@DesignerComponent(
+        version = 1,
+        description = "A simple addition extension",
+        category = ComponentCategory.EXTENSION,
+        nonVisible = true,
+        iconName = "images/extension.png"
+)
+```
+
+`@DesignerComponent` annotation serves as a declaration, enabling the identification of your extension with properties such as versioning, description etc.
+
+### Properties
+
+| version: Integer            | version number                                |
+| --------------------------- | --------------------------------------------- |
+| description: String         | additional details about your extension       |
+| category: ComponentCategory | always set to \`ComponentCategory.EXTENSION\` |
+| nonVisible: Boolean         | always set to \`true\`                        |
+| iconName                    | Http link to your image or local asset path   |
+
+
+## SimpleObject
+
+Since extensions are external components, it's vital to add the annotation to let the system know.
+
+```java
+@SimpleObject(external = true)
+```

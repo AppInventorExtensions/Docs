@@ -12,7 +12,7 @@
         [
             "Common annotations",
             [
-                ["Extension annotations", "/annotations/extension_annotations"],
+                ["Extension annotations", "/annotations/vital_annotations"],
                 ["Events, functions and properties", "/annotations/all_annotations"]
             ]
         ]
