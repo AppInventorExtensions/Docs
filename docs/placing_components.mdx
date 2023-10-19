@@ -23,25 +23,29 @@ appinventor-sources/
 ```java
 package io.addition.test;
 
-import com.google.appinventor.components.annotations.*;
-import com.google.appinventor.components.runtime.*;
-import com.google.appinventor.components.common.*;
+import com.google.appinventor.components.annotations.DesignerComponent;
+import com.google.appinventor.components.annotations.SimpleFunction;
+import com.google.appinventor.components.annotations.SimpleObject;
+import com.google.appinventor.components.common.ComponentCategory;
+import com.google.appinventor.components.runtime.AndroidNonvisibleComponent;
+import com.google.appinventor.components.runtime.ComponentContainer;
+import com.google.appinventor.components.runtime.util.YailList;
 
 @DesignerComponent(version = 1,
-                   description = "Simple addition extension",
-                   category = ComponentCategory.EXTENSION,
-                   nonVisible = true)
+        description = "Simple addition extension",
+        category = ComponentCategory.EXTENSION,
+        nonVisible = true)
 @SimpleObject(external = true)
 public class Addition extends AndroidNonvisibleComponent {
 
-    public Addition(ComponentContainer container) {
-        super(container.$form());
-    }
+  public Addition(ComponentContainer container) {
+    super(container.$form());
+  }
 
-    @SimpleFunction(description = "Simple addition of two numbers")
-    public int Add(int a, int b) {
-        return a + b;
-    }
+  @SimpleFunction(description = "Simple addition of two numbers")
+  public int Add(int a, int b) {
+    return a + b;
+  }
 
   @SimpleFunction(description = "Returns the sum of the given list of integers.")
   public int AddAll(YailList integers) {
@@ -49,7 +53,7 @@ public class Addition extends AndroidNonvisibleComponent {
 
     // loop over each entry, parse to Integer and sum it
     for (final Object o : integers.toArray())
-        sum += Integer.parseInt(o.toString());
+      sum += Integer.parseInt(o.toString());
     return sum;
   }
 }
@@ -67,3 +71,16 @@ appinventor-sources/
                                 └── Addition.java           <- Your extension source file
 ```
 </Accordion>
+
+
+## Building
+
+Tada! You're almost done, it's time to build the extension, run
+
+```bash
+ant extensions
+```
+
+<Success>If you've followed the steps correctly, you'll get output like `BUILD SUCCESSFUL` at the end.</Success>
+
+<Error>If you see something like `BUILD FAILED`, it means something went wrong else you did not follow the steps properly :(</Error>
